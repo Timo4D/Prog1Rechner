@@ -1,2 +1,2 @@
 # Prog1Rechner
-Ein kleiner Taschenrechner
+Ein kleiner Taschenrechner für die HS
