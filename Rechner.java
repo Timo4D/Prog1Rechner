@@ -13,7 +13,6 @@ public class Rechner {
         int y = eingabe("Bitte geben Sie den zweiten Summand ein: ");
 
         this.erg = x+y;
-        ergebniss();
 
         return erg;
     }
@@ -25,7 +24,6 @@ public class Rechner {
         int y = eingabe("Bitte geben Sie den Subtrahend ein: ");
 
         this.erg = x-y;
-        ergebniss();
 
         return erg;
     }
@@ -37,7 +35,6 @@ public class Rechner {
         int y = eingabe("Bitte geben Sie den zweiten Faktor ein: ");
 
         this.erg = x*y;
-        ergebniss();
 
         return erg;
     }
@@ -56,7 +53,6 @@ public class Rechner {
         }
         
         this.erg = x/y;
-        ergebniss();
 
         return this.erg;
     }
@@ -75,7 +71,6 @@ public class Rechner {
         }
 
         this.erg = x%y;
-        ergebniss();
 
         return this.erg;
     }
@@ -91,7 +86,6 @@ public class Rechner {
             this.erg+=i;
         }
 
-        ergebniss();
         return this.erg;
     }
 
@@ -109,7 +103,6 @@ public class Rechner {
 			x = x / 10;
 		}
 
-        ergebniss();
         return this.erg;
     }
 
@@ -126,12 +119,6 @@ public class Rechner {
             return Integer.parseInt(x);
         }
     }
-
-    //Gibt dass Ergebniss aus
-    private void ergebniss() {
-        System.out.println("Ergebniss " + this.erg);
-    }
-
 
     //Getter und Setter
 
