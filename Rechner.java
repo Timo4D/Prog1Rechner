@@ -110,14 +110,21 @@ public class Rechner {
     //Giebt dann wenteder Zahl oder erg zurück
     private int eingabe(String text) {
 
-        System.out.println(text);
-        String x = sc.nextLine();
-
-        if(x.equalsIgnoreCase("erg")) {
-            return this.erg;
-        } else {
-            return Integer.parseInt(x);
+        while(true) {
+            System.out.println(text);
+            String x = sc.nextLine();
+        
+            if(x.equalsIgnoreCase("erg")) {
+                return this.erg;
+            }  else {
+                try {
+                    return Integer.parseInt(x);
+                } catch (Exception e) {
+                    System.out.println("Keine gültige Zahl, bitte nochmal");
+                }
+            }
         }
+
     }
 
     //Getter und Setter
